@@ -1,0 +1,61 @@
+﻿@model MvcOgrenciKayit.Models.Table
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h3>Detaylar</h3>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OgrenciAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OgrenciAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OgrenciSoyad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OgrenciSoyad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OgrenciMail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OgrenciMail)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.OgrenciFoto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OgrenciFoto)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OgrenciAdres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OgrenciAdres)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Düzenle", "Edit", new { id = Model.OgrenciID }) |
+    @Html.ActionLink("Listeye dön", "Index")
+</p>
+<dt>
+    <img src="@Model.OgrenciFoto" width="150" height="150"/>
+</dt>
